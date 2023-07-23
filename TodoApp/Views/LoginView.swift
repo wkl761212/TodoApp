@@ -18,7 +18,7 @@ struct LoginView: View {
                     Text("To Do List")
                         .foregroundColor(Color.white)
                         .bold()
-                    Text("Take It Easy")
+                    Text("Take It Easy...")
                         .foregroundColor(Color.white)
                 }
             }
