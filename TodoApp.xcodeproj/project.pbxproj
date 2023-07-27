@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E68EF0E2A6F020000F92940 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68EF0D2A6F020000F92940 /* HeaderView.swift */; };
+		7E68EF102A6F33C600F92940 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68EF0F2A6F33C600F92940 /* TLButton.swift */; };
+		7E68EF122A6F6D2D00F92940 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68EF112A6F6D2D00F92940 /* Extensions.swift */; };
 		7E768E152A6A5DA800BC6818 /* TodoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E768E142A6A5DA800BC6818 /* TodoAppApp.swift */; };
 		7E768E172A6A5DA800BC6818 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E768E162A6A5DA800BC6818 /* MainView.swift */; };
 		7E768E192A6A5DA800BC6818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E768E182A6A5DA800BC6818 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E68EF0D2A6F020000F92940 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7E68EF0F2A6F33C600F92940 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		7E68EF112A6F6D2D00F92940 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7E768E112A6A5DA800BC6818 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E768E142A6A5DA800BC6818 /* TodoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppApp.swift; sourceTree = "<group>"; };
 		7E768E162A6A5DA800BC6818 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 				7E768E3D2A6CD31F00BC6818 /* LoginView.swift */,
 				7E768E402A6CD5B100BC6818 /* RegisterView.swift */,
 				7E768E422A6CD5FE00BC6818 /* TodoListitemview.swift */,
+				7E68EF0D2A6F020000F92940 /* HeaderView.swift */,
+				7E68EF0F2A6F33C600F92940 /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,10 +141,10 @@
 			children = (
 				7E768E482A6CD76F00BC6818 /* MainViewViewModel.swift */,
 				7E768E4A2A6CD79000BC6818 /* ProfileViewViewModel.swift */,
-				7E768E4C2A6CD7C200BC6818 /* TodoListViewViewModel.swift */,
 				7E768E4E2A6CD7DF00BC6818 /* NewitemViewViewModel.swift */,
 				7E768E502A6CD7F000BC6818 /* LoginViewViewModel.swift */,
 				7E768E522A6CD80100BC6818 /* RegisterViewViewModel.swift */,
+				7E768E4C2A6CD7C200BC6818 /* TodoListViewViewModel.swift */,
 				7E768E542A6CD81100BC6818 /* TodoListitemViewViewModel.swift */,
 			);
 			path = ViewModels;
@@ -148,6 +156,7 @@
 				7E768E302A6CB72000BC6818 /* GoogleService-Info.plist */,
 				7E768E182A6A5DA800BC6818 /* Assets.xcassets */,
 				7E768E142A6A5DA800BC6818 /* TodoAppApp.swift */,
+				7E68EF112A6F6D2D00F92940 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -241,11 +250,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E768E3E2A6CD31F00BC6818 /* LoginView.swift in Sources */,
+				7E68EF0E2A6F020000F92940 /* HeaderView.swift in Sources */,
 				7E768E172A6A5DA800BC6818 /* MainView.swift in Sources */,
 				7E768E532A6CD80100BC6818 /* RegisterViewViewModel.swift in Sources */,
 				7E768E492A6CD76F00BC6818 /* MainViewViewModel.swift in Sources */,
 				7E768E3A2A6CD2FA00BC6818 /* TodoListView.swift in Sources */,
 				7E768E412A6CD5B100BC6818 /* RegisterView.swift in Sources */,
+				7E68EF102A6F33C600F92940 /* TLButton.swift in Sources */,
 				7E768E4B2A6CD79000BC6818 /* ProfileViewViewModel.swift in Sources */,
 				7E768E382A6CD2C300BC6818 /* ProfileView.swift in Sources */,
 				7E768E452A6CD70B00BC6818 /* User.swift in Sources */,
@@ -253,6 +264,7 @@
 				7E768E472A6CD72300BC6818 /* TodoListitem.swift in Sources */,
 				7E768E512A6CD7F000BC6818 /* LoginViewViewModel.swift in Sources */,
 				7E768E432A6CD5FE00BC6818 /* TodoListitemview.swift in Sources */,
+				7E68EF122A6F6D2D00F92940 /* Extensions.swift in Sources */,
 				7E768E4F2A6CD7DF00BC6818 /* NewitemViewViewModel.swift in Sources */,
 				7E768E152A6A5DA800BC6818 /* TodoAppApp.swift in Sources */,
 				7E768E3C2A6CD30F00BC6818 /* NewitemView.swift in Sources */,

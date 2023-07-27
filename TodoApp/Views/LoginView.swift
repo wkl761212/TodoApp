@@ -8,21 +8,47 @@
 import SwiftUI
 
 struct LoginView: View {
+    @StateObject var viewModel = LoginViewViewModel()
+    
     var body: some View {
-        VStack {
-            // Header
-            ZStack {
-                RoundedRectangle(cornerRadius: 0)
-                    .foregroundColor(Color.blue)
-                VStack {
-                    Text("To Do List")
-                        .foregroundColor(Color.white)
-                        .bold()
-                    Text("Take It Easy...")
-                        .foregroundColor(Color.white)
+        NavigationView {
+            VStack {
+                // Header
+                HeaderView(title: "To Do List", subtitle: "Get Things Done", angle: 15, background: .blue)
+                
+                
+                Form {
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
+                    }
+                    TextField("Email Aderess", text: $viewModel.email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
+                        
+                    SecureField("Password", text: $viewModel.password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    
+                    TLButton(title: "Log In", background: .teal) {
+                        viewModel.login()
+                    }
+                    .padding()
                 }
+                .offset(y: -50)
+                        
+                // Create Account
+                VStack {
+                    Text("New Here?")
+                    
+                    NavigationLink("Create Account",
+                                   destination: RegisterView())
+                }
+                .padding(.bottom, 50)
+                        
+                Spacer()
+                        
+                
             }
-            .frame(width: UIScreen.main.bounds.width * 3, height: 300)
         }
     }
 }
