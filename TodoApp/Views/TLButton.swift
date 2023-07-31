@@ -19,7 +19,7 @@ struct TLButton: View {
                 RoundedRectangle(cornerRadius: 10)
                     .foregroundColor(background)
                 
-                Text("Log In")
+                Text(title)
                     .foregroundColor(Color.white)
                     .bold()
             }
